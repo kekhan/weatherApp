@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather App</title>
+	<meta charset = "utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+
+});
+</script>
+<link rel="stylesheet" href="weatherstyle.css"> 
+</head>
+<body onload = "getLocation()"> 
+
+	<div class ="container-fluid">
+	<div class"row">
+	<h1 class ="text-center"> Weather App</h1>
+
+	<div class ="text-center"> <h2 id ="location"></h2>
+	</div>
+	<h4 class="text-center" id="date"></h4>
+	<div class ="text-center"> 
+			<h3 id="fahrenheit">
+			</h3>
+			<p>AND</p>
+			<h3 id ="celsius"></h3>
+
+	</div>
+	<br><br>
+	<div id ="weatherIcon"> 
+		<p id="des" class= "text-center">
+		</p>
+	</div>
+</div>
+</div>
+<script src="weather.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+body{
+	background-color: black;
+}
+h1{
+	color :white;
+}
+img {
+    display: block;
+    margin: auto;
+    width: 15%;
+}
+#temp{
+	color:white;
+}
+#date{
+	color: white;
+}
+#location{
+	color:white;
+}
+p{
+	color:white;
+	font-weight:bold;
+}
+#celsius{
+	color:red;
+}
+#fahrenheit{
+	color:blue;
+}
