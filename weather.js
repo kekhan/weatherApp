@@ -25,7 +25,23 @@ function getLocation(){
 	
 }
 function weatherInfo(data){
-	document.getElementById('date').innerHTML=Date();
+	var time = new Date();
+	console.log(data);
+	var hour = time.getHours();
+	console.log(hour);
+
+	document.getElementById('date').innerHTML=time;
+	if(hour <=5 ){
+		document.getElementById('circle').style.backgroundColor = "#F5F3CE";
+
+	}
+	else if(hour<=18){
+		document.getElementById('circle').style.backgroundColor="#fbac13";
+	}
+	else if(hour<=23){
+		document.getElementById('circle').style.backgroundColor="#F5F3CE";
+	}
+
 	document.getElementById('location').innerHTML=data.name;
 	var y = document.getElementById('fahrenheit');
 	y.innerHTML=Math.floor(1.8*((data.main.temp)-273)+32) +" °F";
