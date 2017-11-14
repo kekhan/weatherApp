@@ -37,6 +37,7 @@ function weatherInfo(data){
 	}
 	else if(hour<=18){
 		document.getElementById('circle').style.backgroundColor="#fbac13";
+		document.getElementById('body').style.backgroundColor="#7dc9fc";
 	}
 	else if(hour<=23){
 		document.getElementById('circle').style.backgroundColor="#F5F3CE";
