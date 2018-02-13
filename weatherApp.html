@@ -19,7 +19,7 @@ $(document).ready(function(){
 </script>
 <link rel="stylesheet" href="weatherstyle.css"> 
 </head>
-<body id ="body" onload = "getLocation()"> 
+<body id ="body" onload = "geoLocation()"> 
 
 	<div class ="container-fluid">
 	<div class"row">
@@ -28,7 +28,19 @@ $(document).ready(function(){
 	<div class ="text-center"> <h2 id ="location"></h2>
 	</div>
 	<h4 class="text-center" id="date"></h4>
+	
+	<button onclick = "tempF()"class = "btn btn-default" id = "Fbtn" value = "F">
+		Convert to °F
+	</button>
+	
+	
+	<button onclick = "tempC()"class = "btn btn-default" id = "Cbtn" value = "C">
+		Convert to °C
+	</button>
+		
+	
 	<div id = "circle" class ="text-center well"> 
+
 			<h3 id="fahrenheit">
 			</h3>
 			<h3 id ="celsius"></h3>
